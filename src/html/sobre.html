@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Sobre - Projeto Teste</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="/" class="logo">
+				<img src="../images/logo.png" alt="Projeto Teste Logo" width="120" height="auto">
+			</a>
+			<div class="nav-links">
+				<a href="../html/sobre.html" class="nav-link active">Sobre</a>
+				<a href="../html/servicos.html" class="nav-link">Serviços</a>
+				<a href="../html/contato.html" class="nav-link">Contato</a>
+				
+				<!-- Dashboard Link (shown when logged in) -->
+				<a href="../html/dashboard.html" class="nav-link" id="dashboard-link" style="display: none;">Dashboard</a>
+				
+				<!-- Login Link (shown when NOT logged in) -->
+				<a href="../html/login.html" class="nav-link" id="login-link">Login</a>
+				
+				<!-- User Section (shown when logged in) -->
+				<div class="navbar-auth" id="user-section">
+					<div class="user-profile">
+						<div class="user-avatar" id="user-avatar">U</div>
+						<div class="user-info">
+							<p class="user-name" id="user-name">Usuário</p>
+							<p class="user-status">Online</p>
+						</div>
+					</div>
+					<button id="logout-button" class="nav-link logout-btn">Sair</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="page-section">
+			<div class="page-container">
+				<h1 class="page-title">Sobre Nós</h1>
+				
+				<div class="content-grid">
+					<div class="content-card">
+						<h2>Nossa História</h2>
+						<p>
+							Fundada em 2020, nossa empresa nasceu com o objetivo de revolucionar 
+							a forma como as pessoas gerenciam seus projetos. Com uma equipe 
+							apaixonada por tecnologia e inovação, desenvolvemos soluções que 
+							simplificam processos complexos.
+						</p>
+					</div>
+
+					<div class="content-card">
+						<h2>Nossa Missão</h2>
+						<p>
+							Proporcionar ferramentas intuitivas e eficientes que permitam aos 
+							nossos usuários alcançar seus objetivos com mais produtividade e 
+							menos esforço, transformando ideias em realidade.
+						</p>
+					</div>
+
+					<div class="content-card">
+						<h2>Nossos Valores</h2>
+						<ul>
+							<li>Inovação constante</li>
+							<li>Qualidade em primeiro lugar</li>
+							<li>Foco no cliente</li>
+							<li>Transparência em tudo que fazemos</li>
+							<li>Trabalho em equipe</li>
+						</ul>
+					</div>
+
+					<div class="content-card">
+						<h2>Nossa Visão</h2>
+						<p>
+							Ser reconhecida como a plataforma líder em gestão de projetos, 
+							oferecendo soluções que transformam a maneira como as pessoas 
+							trabalham e colaboram em todo o mundo.
+						</p>
+					</div>
+				</div>
+
+				<div class="stats-section">
+					<div class="stat-item">
+						<h3>500+</h3>
+						<p>Projetos Concluídos</p>
+					</div>
+					<div class="stat-item">
+						<h3>1000+</h3>
+						<p>Usuários Ativos</p>
+					</div>
+					<div class="stat-item">
+						<h3>50+</h3>
+						<p>Empresas Parceiras</p>
+					</div>
+					<div class="stat-item">
+						<h3>24/7</h3>
+						<p>Suporte Disponível</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="../js/utils.js"></script>
+	 
+
+</body>
+</html>

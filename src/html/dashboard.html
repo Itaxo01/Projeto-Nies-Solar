@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Dashboard - Projeto Teste</title>
+</head>
+<body>
+	<script>
+		// Check if user is logged in
+		document.addEventListener('DOMContentLoaded', () => {
+			const session = localStorage.getItem('userSession');
+			const loadingScreen = document.getElementById('loading-screen');
+			const dashboardContent = document.getElementById('dashboard-content');
+			
+			// Small delay to prevent flash
+			setTimeout(() => {
+				if (!session) {
+					// Not logged in, redirect to login immediately
+					window.location.href = '../html/login.html';
+					return;
+				}
+				
+				// Parse session data
+				const userData = JSON.parse(session);
+				
+				// Hide loading screen and show dashboard content
+				loadingScreen.style.display = 'none';
+				dashboardContent.style.display = 'block';
+				
+				// Update user greeting (this element might not exist in new navbar structure)
+				const userGreeting = document.getElementById('user-greeting');
+				if (userGreeting) {
+					userGreeting.textContent = `Olá, ${userData.username}!`;
+				}
+				
+				console.log('Dashboard loaded for user:', userData.username);
+			}, 100); // Short delay to prevent flash
+		});
+	</script>
+	
+	<header>
+		<nav class="navbar">
+			<a href="../html/dashboard.html" class="logo">
+				<img src="../images/logo.png" alt="Projeto Teste Logo" width="120" height="auto">
+			</a>
+			<div class="nav-links">
+				<a href="../html/sobre.html" class="nav-link">Sobre</a>
+				<a href="../html/servicos.html" class="nav-link">Serviços</a>
+				<a href="../html/contato.html" class="nav-link">Contato</a>
+				
+				<!-- Dashboard Link (shown when logged in) -->
+				<a href="../html/dashboard.html" class="nav-link active" id="dashboard-link" style="display: none;">Dashboard</a>
+				
+				<!-- Login Link (shown when NOT logged in) -->
+				<a href="../html/login.html" class="nav-link" id="login-link">Login</a>
+				
+				<!-- User Section (shown when logged in) -->
+				<div class="navbar-auth" id="user-section">
+					<div class="user-profile">
+						<a href="../html/dashboard.html" class="user-avatar" id="user-avatar">U</a>
+						<!-- <div class="user-avatar" id="user-avatar">U</div> -->
+						
+						<div class="user-info">
+							<p class="user-name" id="user-name">Usuário</p>
+							<p class="user-status">Online</p>
+						</div>
+					</div>
+					<button id="logout-button" class="nav-link logout-btn">Sair</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Loading indicator -->
+	<div id="loading-screen" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column;">
+		<div style="font-size: 2rem; margin-bottom: 20px;">🔐</div>
+		<p style="color: #5a6c7d; font-size: 1.1rem;">Verificando autenticação...</p>
+	</div>
+
+	<main id="dashboard-content" style="display: none;">
+		<section class="page-section">
+			<div class="page-container">
+				<h1 class="page-title">Dashboard</h1>
+				<p class="page-subtitle">Bem-vindo de volta! Aqui você pode gerenciar suas atividades.</p>
+				
+				<div class="dashboard-grid">
+					<div class="dashboard-card">
+						<h3>📊 Projetos</h3>
+						<p>Gerencie seus projetos ativos</p>
+						<a href="#" class="cta-button">Ver Projetos</a>
+					</div>
+
+					<div class="dashboard-card">
+						<h3>👥 Equipe</h3>
+						<p>Colabore com sua equipe</p>
+						<a href="#" class="cta-button">Ver Equipe</a>
+					</div>
+
+					<div class="dashboard-card">
+						<h3>📈 Relatórios</h3>
+						<p>Acompanhe o progresso</p>
+						<a href="#" class="cta-button">Ver Relatórios</a>
+					</div>
+
+					<div class="dashboard-card">
+						<h3>⚙️ Configurações</h3>
+						<p>Personalize sua conta</p>
+						<a href="#" class="cta-button">Configurar</a>
+					</div>
+				</div>
+
+				<div class="recent-activity">
+					<h2>Atividade Recente</h2>
+					<div class="activity-list">
+						<div class="activity-item">
+							<span class="activity-icon">✅</span>
+							<div>
+								<strong>Projeto concluído</strong>
+								<p>Website corporativo finalizado</p>
+								<small>2 horas atrás</small>
+							</div>
+						</div>
+						<div class="activity-item">
+							<span class="activity-icon">👤</span>
+							<div>
+								<strong>Novo membro</strong>
+								<p>João Silva adicionado à equipe</p>
+								<small>1 dia atrás</small>
+							</div>
+						</div>
+						<div class="activity-item">
+							<span class="activity-icon">📝</span>
+							<div>
+								<strong>Relatório gerado</strong>
+								<p>Relatório mensal de produtividade</p>
+								<small>3 dias atrás</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="../js/utils.js"></script>
+	
+</body>
+</html>

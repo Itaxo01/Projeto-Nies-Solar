@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Contato - Projeto Teste</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="/" class="logo">
+				<img src="../images/logo.png" alt="Projeto Teste Logo" width="120" height="auto">
+			</a>
+			<div class="nav-links">
+				<a href="../html/sobre.html" class="nav-link">Sobre</a>
+				<a href="../html/servicos.html" class="nav-link">Serviços</a>
+				<a href="../html/contato.html" class="nav-link active">Contato</a>
+				
+				<!-- Dashboard Link (shown when logged in) -->
+				<a href="../html/dashboard.html" class="nav-link" id="dashboard-link" style="display: none;">Dashboard</a>
+				
+				<!-- Login Link (shown when NOT logged in) -->
+				<a href="../html/login.html" class="nav-link" id="login-link">Login</a>
+				
+				<!-- User Section (shown when logged in) -->
+				<div class="navbar-auth" id="user-section">
+					<div class="user-profile">
+						<div class="user-avatar" id="user-avatar">U</div>
+						<div class="user-info">
+							<p class="user-name" id="user-name">Usuário</p>
+							<p class="user-status">Online</p>
+						</div>
+					</div>
+					<button id="logout-button" class="nav-link logout-btn">Sair</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="page-section">
+			<div class="page-container">
+				<h1 class="page-title">Entre em Contato</h1>
+				<p class="page-subtitle">Estamos aqui para ajudar você. Escolha a melhor forma de nos contatar.</p>
+				
+				<div class="contact-grid">
+					<div class="contact-info">
+						<h2>Informações de Contato</h2>
+						
+						<div class="contact-item">
+							<div class="contact-icon">📧</div>
+							<div>
+								<h3>Email</h3>
+								<p>contato@projetoteste.com</p>
+								<p>suporte@projetoteste.com</p>
+							</div>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-icon">📱</div>
+							<div>
+								<h3>Telefone</h3>
+								<p>(11) 9 9999-9999</p>
+								<p>Segunda a Sexta: 8h às 18h</p>
+							</div>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-icon">📍</div>
+							<div>
+								<h3>Endereço</h3>
+								<p>Rua das Inovações, 123</p>
+								<p>São Paulo - SP, 01234-567</p>
+							</div>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-icon">🕒</div>
+							<div>
+								<h3>Horário de Funcionamento</h3>
+								<p>Segunda a Sexta: 8h às 18h</p>
+								<p>Sábado: 9h às 13h</p>
+								<p>Domingo: Fechado</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact-form-container">
+						<h2>Envie sua Mensagem</h2>
+						<form class="contact-form" id="contact-form">
+							<div class="form-group">
+								<label for="nome">Nome Completo</label>
+								<input type="text" id="nome" name="nome" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+
+							<div class="form-group">
+								<label for="telefone">Telefone</label>
+								<input type="tel" id="telefone" name="telefone">
+							</div>
+
+							<div class="form-group">
+								<label for="assunto">Assunto</label>
+								<select id="assunto" name="assunto" required>
+									<option value="">Selecione um assunto</option>
+									<option value="suporte">Suporte Técnico</option>
+									<option value="vendas">Informações de Vendas</option>
+									<option value="parceria">Parcerias</option>
+									<option value="feedback">Feedback</option>
+									<option value="outro">Outro</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="mensagem">Mensagem</label>
+								<textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva como podemos ajudá-lo..."></textarea>
+							</div>
+
+							<button type="submit" class="button">Enviar Mensagem</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="social-section">
+					<h2>Siga-nos nas Redes Sociais</h2>
+					<div class="social-links">
+						<a href="#" class="social-link">
+							<span class="social-icon">👥</span>
+							<span>Facebook</span>
+						</a>
+						<a href="#" class="social-link">
+							<span class="social-icon">📸</span>
+							<span>Instagram</span>
+						</a>
+						<a href="#" class="social-link">
+							<span class="social-icon">🐦</span>
+							<span>Twitter</span>
+						</a>
+						<a href="#" class="social-link">
+							<span class="social-icon">💼</span>
+							<span>LinkedIn</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="../js/utils.js"></script>
+	 
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Serviços - Projeto Teste</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="/" class="logo">
+				<img src="../images/logo.png" alt="Projeto Teste Logo" width="120" height="auto">
+			</a>
+			<div class="nav-links">
+				<a href="../html/sobre.html" class="nav-link">Sobre</a>
+				<a href="../html/servicos.html" class="nav-link active">Serviços</a>
+				<a href="../html/contato.html" class="nav-link">Contato</a>
+				
+				<!-- Dashboard Link (shown when logged in) -->
+				<a href="../html/dashboard.html" class="nav-link" id="dashboard-link" style="display: none;">Dashboard</a>
+				
+				<!-- Login Link (shown when NOT logged in) -->
+				<a href="../html/login.html" class="nav-link" id="login-link">Login</a>
+				
+				<!-- User Section (shown when logged in) -->
+				<div class="navbar-auth" id="user-section">
+					<div class="user-profile">
+						<div class="user-avatar" id="user-avatar">U</div>
+						<div class="user-info">
+							<p class="user-name" id="user-name">Usuário</p>
+							<p class="user-status">Online</p>
+						</div>
+					</div>
+					<button id="logout-button" class="nav-link logout-btn">Sair</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="page-section">
+			<div class="page-container">
+				<h1 class="page-title">Nossos Serviços</h1>
+				<p class="page-subtitle">Soluções completas para o gerenciamento de seus projetos</p>
+				
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">📊</div>
+						<h3>Gestão de Projetos</h3>
+						<p>
+							Ferramentas completas para planejamento, execução e monitoramento 
+							de projetos de qualquer tamanho e complexidade.
+						</p>
+						<ul class="service-features">
+							<li>Timeline interativo</li>
+							<li>Gestão de recursos</li>
+							<li>Relatórios automáticos</li>
+							<li>Colaboração em tempo real</li>
+						</ul>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">👥</div>
+						<h3>Gestão de Equipes</h3>
+						<p>
+							Organize sua equipe, distribua tarefas e acompanhe o progresso 
+							de cada membro em tempo real.
+						</p>
+						<ul class="service-features">
+							<li>Atribuição de tarefas</li>
+							<li>Controle de permissões</li>
+							<li>Chat integrado</li>
+							<li>Avaliação de performance</li>
+						</ul>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">📈</div>
+						<h3>Análise e Relatórios</h3>
+						<p>
+							Dados e insights detalhados sobre o desempenho dos seus projetos 
+							e equipes para tomada de decisões estratégicas.
+						</p>
+						<ul class="service-features">
+							<li>Dashboards personalizáveis</li>
+							<li>Métricas em tempo real</li>
+							<li>Exportação de dados</li>
+							<li>Previsões inteligentes</li>
+						</ul>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">🔧</div>
+						<h3>Integrações</h3>
+						<p>
+							Conecte suas ferramentas favoritas e centralize todo o 
+							trabalho em uma única plataforma.
+						</p>
+						<ul class="service-features">
+							<li>API robusta</li>
+							<li>Conectores pré-built</li>
+							<li>Sincronização automática</li>
+							<li>Webhooks personalizados</li>
+						</ul>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">🛡️</div>
+						<h3>Segurança</h3>
+						<p>
+							Proteção avançada para seus dados com criptografia de ponta 
+							e controles de acesso granulares.
+						</p>
+						<ul class="service-features">
+							<li>Criptografia end-to-end</li>
+							<li>Backup automático</li>
+							<li>Autenticação 2FA</li>
+							<li>Auditoria completa</li>
+						</ul>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">🎓</div>
+						<h3>Suporte e Treinamento</h3>
+						<p>
+							Suporte especializado e programas de treinamento para 
+							maximizar o uso da plataforma.
+						</p>
+						<ul class="service-features">
+							<li>Suporte 24/7</li>
+							<li>Treinamento personalizado</li>
+							<li>Documentação completa</li>
+							<li>Webinars regulares</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="cta-section">
+					<h2>Pronto para começar?</h2>
+					<p>Entre em contato conosco e descubra como podemos ajudar seu negócio.</p>
+					<div class="cta-buttons">
+						<a href="../html/login.html" class="cta-button primary">Começar Agora</a>
+						<a href="../html/contato.html" class="cta-button">Falar Conosco</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="../js/utils.js"></script>
+	 
+
+
+</body>
+</html>

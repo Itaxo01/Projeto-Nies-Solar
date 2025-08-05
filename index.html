@@ -1,0 +1,61 @@
+<!-- O Index tem seu diretório considerado em /, portanto fica com os links diferentes do restante dos htmls.-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./src/css/style.css">
+	<title>Projeto Teste - Bem-vindo</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="/" class="logo">
+				<img src="./src/images/logo.png" alt="NieuesSolar Logo" width="120" height="auto">
+			</a>
+			<div class="nav-links">
+				<a href="./src/html/sobre.html" class="nav-link">Sobre</a>
+				<a href="./src/html/servicos.html" class="nav-link">Serviços</a>
+				<a href="./src/html/contato.html" class="nav-link">Contato</a>
+				
+				<!-- Dashboard Link (shown when logged in) -->
+				<a href="./src/html/dashboard.html" class="nav-link" id="dashboard-link" style="display: none;">Dashboard</a>
+				
+				<!-- Login Link (shown when NOT logged in) -->
+				<a href="./src/html/login.html" class="nav-link" id="login-link">Login</a>
+				
+				<!-- User Section (shown when logged in) -->
+				<div class="navbar-auth" id="user-section">
+					<div class="user-profile">
+						<div class="user-avatar" id="user-avatar">U</div>
+						<div class="user-info">
+							<p class="user-name" id="user-name">Usuário</p>
+							<p class="user-status">Online</p>
+						</div>
+					</div>
+					<button id="logout-button" class="nav-link logout-btn">Sair</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero-section">
+			<div class="hero-content">
+				<h1 class="hero-title">Bem-vindo ao Projeto Teste</h1>
+				<p class="hero-subtitle">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quo repellat? Illo corrupti fugiat ea neque magnam facere odit error voluptate, placeat veniam ducimus voluptatum. Ducimus laudantium sint assumenda vitae doloribus, quos corporis iusto totam sapiente incidunt ratione, vero nemo.
+				</p>
+				<div class="cta-buttons">
+					<a href="./src/html/login.html" class="cta-button primary">Fazer Login</a>
+					<a href="./src/html/sobre.html" class="cta-button">Saiba Mais</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="./src/js/utils.js"></script>
+	 
+
+</body>
+</html>
