@@ -14,6 +14,9 @@ The project may be commented in english and some times in portuguese, sorry for 
 
 ## ToDo's
 The project isn't complete yet. Here are the main things to do:
+
 Make real interfaces (For now, almost everything is just test fields, not the actual final page).
+
 Create the user dashboard system that gathers their eletric bill (This one does not depend on me entirely, as I'm still not aware of how the data is extracted, but it should be fine to write some NodeJS or python script for that)
+
 Use Cloud Database (For now, the database and server is my Personal Computer)
