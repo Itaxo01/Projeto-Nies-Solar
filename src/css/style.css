@@ -53,6 +53,7 @@ header {
 	display: flex;
 	gap: 20px;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .nav-link {
@@ -76,6 +77,218 @@ header {
 	background: rgba(52, 152, 219, 0.1);
 	color: #3498db;
 	font-weight: 600;
+}
+
+/* ========== USER PROFILE NAVBAR STYLES ========== */
+.navbar-auth {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.user-profile {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.user-avatar {
+	text-decoration: none;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #3498db, #2980b9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.user-name {
+	color: #2c3e50;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1.2;
+}
+
+.user-status {
+	color: #5a6c7d;
+	font-size: 12px;
+	margin: 0;
+	line-height: 1.2;
+}
+
+.logout-btn {
+	background: linear-gradient(135deg, #e74c3c, #c0392b);
+	color: white !important;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+	background: linear-gradient(135deg, #c0392b, #a93226);
+	transform: translateY(-1px);
+}
+
+#login-link {
+	display: none;
+}
+
+#user-section {
+	display: none;
+}
+
+/* ========== BUTTON STYLES ========== */
+.button {
+	display: block;
+	width: 200px;
+	margin: 25px auto;
+	padding: 15px;
+	background: linear-gradient(135deg, #3498db, #2980b9);
+	color: white;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.button:hover {
+	background: linear-gradient(135deg, #2980b9, #21618c);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.cta-buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 15px 30px;
+	background: rgba(255, 255, 255, 0.8);
+	color: #2c3e50;
+	text-decoration: none;
+	border-radius: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button.primary {
+	background: linear-gradient(135deg, #3498db, #2980b9);
+	color: white;
+	box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.cta-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button.primary:hover {
+	box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+/* ========== FORM STYLES ========== */
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	color: #2c3e50;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	width: 100%;
+	padding: 12px 15px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+	transition: all 0.3s ease;
+	outline: none;
+	font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+	background-color: white;
+}
+
+.form-group textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+.input-block {
+	display: block;
+	width: 80%;
+	max-width: 400px;
+	margin: 0 auto 20px;
+}
+
+.input-block label {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 500;
+	color: #555;
+	margin-bottom: 8px;
+}
+
+.input-block input {
+	width: 100%;
+	padding: 15px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+	transition: all 0.3s ease;
+	outline: none;
+	backdrop-filter: blur(5px);
+}
+
+.input-block input:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+	background-color: white;
 }
 
 /* ========== PAGE LAYOUT STYLES ========== */
@@ -338,44 +551,6 @@ header {
 	font-weight: 600;
 }
 
-.form-group {
-	margin-bottom: 20px;
-}
-
-.form-group label {
-	display: block;
-	color: #2c3e50;
-	font-weight: 500;
-	margin-bottom: 8px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-	width: 100%;
-	padding: 12px 15px;
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	border-radius: 8px;
-	background: rgba(255, 255, 255, 0.8);
-	font-size: 16px;
-	transition: all 0.3s ease;
-	outline: none;
-	font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-	border-color: #3498db;
-	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
-	background-color: white;
-}
-
-.form-group textarea {
-	resize: vertical;
-	min-height: 120px;
-}
-
 /* ========== SOCIAL SECTION ========== */
 .social-section {
 	text-align: center;
@@ -456,43 +631,6 @@ header {
 	margin-bottom: 30px;
 }
 
-.cta-buttons {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.cta-button {
-	display: inline-block;
-	padding: 15px 30px;
-	background: rgba(255, 255, 255, 0.8);
-	color: #2c3e50;
-	text-decoration: none;
-	border-radius: 12px;
-	font-size: 16px;
-	font-weight: 600;
-	transition: all 0.3s ease;
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button.primary {
-	background: linear-gradient(135deg, #3498db, #2980b9);
-	color: white;
-	box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-}
-
-.cta-button:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.cta-button.primary:hover {
-	box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-}
-
 /* ========== LOGIN PAGE STYLES ========== */
 #login-container {
 	width: 40%;
@@ -516,86 +654,72 @@ header {
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.input-block {
-	display: block;
-	width: 80%;
-	max-width: 400px;
-	margin: 0 auto 20px;
-}
-
-.input-block label {
-	display: block;
-	width: 100%;
-	font-size: 16px;
-	font-weight: 500;
-	color: #555;
-	margin-bottom: 8px;
-}
-
-.input-block input {
-	width: 100%;
-	padding: 15px;
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	border-radius: 12px;
-	background: rgba(255, 255, 255, 0.8);
-	font-size: 16px;
-	transition: all 0.3s ease;
-	outline: none;
-	backdrop-filter: blur(5px);
-}
-
-.input-block input:focus {
-	border-color: #3498db;
-	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
-	background-color: white;
-}
-
-.button {
-	display: block;
-	width: 200px;
-	margin: 25px auto;
-	padding: 15px;
-	background: linear-gradient(135deg, #3498db, #2980b9);
-	color: white;
-	border: none;
-	border-radius: 12px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	transition: all 0.3s ease;
-	box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-}
-
-.button:hover {
-	background: linear-gradient(135deg, #2980b9, #21618c);
-	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-}
-
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
 	.navbar {
-		flex-direction: column;
-		gap: 15px;
+		flex-wrap: wrap;
+		gap: 8px;
+		padding: 8px;
+		justify-content: center;
+	}
+	
+	.logo {
+		padding: 5px 8px;
+		order: -1;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	
+	.logo img {
+		width: 90px;
+		height: auto;
+	}
+	
+	.nav-links {
+		gap: 6px;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
+	
+	.nav-link {
+		font-size: 12px;
+		padding: 4px 8px;
+		white-space: nowrap;
 	}
 	
 	.navbar-auth {
-		flex-direction: column;
-		gap: 10px;
+		gap: 6px;
 		align-items: center;
 	}
 	
 	.user-profile {
-		gap: 10px;
+		gap: 6px;
+		align-items: center;
 	}
 	
 	.user-info {
-		align-items: center;
-		text-align: center;
+		display: none; /* Hide user info text on mobile to save space */
+	}
+	
+	.user-avatar {
+		width: 28px;
+		height: 28px;
+		font-size: 12px;
+	}
+	
+	.logout-btn {
+		font-size: 12px;
+		padding: 4px 8px;
+	}
+	
+	/* Adjust page content margin for mobile navbar */
+	.page-section {
+		padding-top: 140px;
+	}
+	
+	main {
+		margin-top: 100px;
 	}
 	
 	.hero-title {
@@ -650,6 +774,47 @@ header {
 	.dashboard-grid {
 		grid-template-columns: 1fr;
 		gap: 20px;
+	}
+}
+
+/* ========== EXTRA SMALL SCREENS ========== */
+@media (max-width: 480px) {
+	.nav-links {
+		gap: 4px;
+	}
+	
+	.nav-link {
+		font-size: 13px;
+		padding: 5px 8px;
+	}
+	
+	.navbar-auth {
+		gap: 4px;
+	}
+	
+	.user-avatar {
+		margin-left:18px;
+		width: 30px;
+		height: 30px;
+		font-size: 11px;
+	}
+	
+	.logout-btn {
+		font-size: 15px;
+		padding: 6px 9px;
+	}
+	
+	.logo img {
+		width: 70px;
+	}
+	
+	/* Adjust page content margin for very small screens */
+	.page-section {
+		padding-top: 120px;
+	}
+	
+	main {
+		margin-top: 90px;
 	}
 }
 
@@ -746,81 +911,6 @@ header {
 .activity-item small {
 	color: #7f8c8d;
 	font-size: 0.8rem;
-}
-
-.logout-btn {
-	background: linear-gradient(135deg, #e74c3c, #c0392b);
-	color: white !important;
-	border: none;
-	padding: 8px 16px;
-	border-radius: 8px;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 600;
-	transition: all 0.3s ease;
-}
-
-.logout-btn:hover {
-	background: linear-gradient(135deg, #c0392b, #a93226);
-	transform: translateY(-1px);
-}
-
-/* ========== USER PROFILE NAVBAR STYLES ========== */
-.user-profile {
-	display: flex;
-	align-items: center;
-	gap: 15px;
-}
-
-.user-avatar {
-	text-decoration: none;
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background: linear-gradient(135deg, #3498db, #2980b9);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	font-weight: 600;
-	font-size: 16px;
-	text-transform: uppercase;
-	box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
-}
-
-.user-info {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-.user-name {
-	color: #2c3e50;
-	font-size: 14px;
-	font-weight: 600;
-	margin: 0;
-	line-height: 1.2;
-}
-
-.user-status {
-	color: #5a6c7d;
-	font-size: 12px;
-	margin: 0;
-	line-height: 1.2;
-}
-
-.navbar-auth {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-#login-link {
-	display: none;
-}
-
-#user-section {
-	display: none;
 }
 
 /* ========== LOADING SCREEN STYLES ========== */
